@@ -1,0 +1,9 @@
+.admindash2 {
+  display: flex;
+  grid-template-columns: 18% 60%;
+  padding-top: 13vh;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 20px;
+  background-color: rgb(25, 30,69);
+}

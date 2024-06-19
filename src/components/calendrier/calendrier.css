@@ -1,0 +1,174 @@
+/* .calendrier-container {
+    font-family: 'Votre police de caractère', sans-serif;
+  }
+  
+  .calendrier-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-titles span {
+    margin-right: 10px;
+  }
+  
+  .calendrier-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .calendrier-table th, .calendrier-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .calendrier-table th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+
+   */
+
+   .calendrier-container {
+    font-family: 'Votre police de caractère', sans-serif;
+    padding:2rem;
+    padding-left : 5rem;
+    
+    padding-right:5rem ;
+    padding-top: 8rem ;
+  }
+  
+  .calendrier-header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; /* Pour positionner la ligne grise */
+  }
+
+  .calendrier-header .header-content {
+    display: flex; /* Utiliser flexbox pour aligner les éléments en ligne */
+    align-items: center; /* Centrer les éléments verticalement */
+    font-size: 24px; /* Centrer les éléments horizontalement */
+  }
+  
+  .header-line {
+    background-color: grey;
+    height: 4px;
+    width: 200px; /* Ou la longueur que vous préférez */
+    margin-right: 15px; /* Espace entre la ligne et le texte */
+    position: relative;
+  }
+  .header-title {
+    font-weight: bold; 
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+
+   
+  }
+  .header-main-title {
+    text-align: left; /* Aligner le titre à droite */
+    font-weight: 800;
+    font-size: 3.5em;
+    transform: translateX(212px); /* Ajustez pour déplacer un peu vers la gauche */
+    margin-top: 20px; /* Ajouter de l'espace au-dessus du titre */
+    display: block; /* Cela va permettre d'appliquer le margin et le transform */
+    /* Si vous souhaitez que le titre soit sur deux lignes avec un espace spécifique, vous pouvez également utiliser margin */
+  }
+  .header-dot {
+    height: 10px; /* Ajustez la taille du point comme vous le souhaitez */
+    width: 10px; /* Ajustez la taille du point comme vous le souhaitez */
+    border-radius: 50%; /* Ceci rendra la div en cercle */
+    background-color: black; /* Couleur du point */
+    margin-left: 15px; /* Espace entre le titre et le point */
+  }
+  .calendrier-table th[colspan="2"] {
+    font-size: 1.2em; /* Ajustez la taille de la police comme nécessaire pour agrandir */
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: center; /* Centrer le texte */
+    padding-top: 10px; /* Espace au-dessus du texte */
+  }
+  
+  .calendrier-table {
+    width: 80%; /* Augmentez la largeur selon vos besoins */
+    margin: 0 auto; /* Pour centrer le tableau */
+    border-collapse: separate; /* Pour pouvoir gérer les bordures des cellules individuellement */
+    border-spacing: 0; /* Pour supprimer l'espace entre les cellules */
+  }
+  
+  .calendrier-table th, .calendrier-table td {
+    /* border-top: 1px solid #000; */
+    border-bottom: 1px solid #1eb2a6;
+    border-left: transparent; /* Rendre les bordures gauches transparentes */
+    border-right: transparent; /* Rendre les bordures droites transparentes */
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .calendrier-table th[colspan="2"] {
+    background-color: #36454F; /* Gris charbon pour l'arrière-plan */
+    font-size: 1em; /* Garder la taille de police actuelle */
+}
+  .calendrier-table th {
+    background-color:#1eb2a6;
+    color: #fff;
+    text-align: center;
+    border: none; /* Supprimer la bordure des th */
+  }
+  
+  .calendrier-table thead::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-top: 1px solid #000; /* Ligne sur toute la largeur */
+  }
+  .calendrier-table thead tr:first-child th {
+    /* border-bottom: 1px solid #000;  */
+    border-bottom: none;
+    text-align: center;
+  }
+  
+  /* Style pour la seconde ligne du thead pour remettre les bordures */
+  /* .calendrier-table thead tr:last-child th {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  } */
+  
+  /* Assurez-vous que les td et th dans tbody ne montrent pas de bordures verticales */
+  .calendrier-table tbody td, .calendrier-table tbody th {
+    border-left: transparent;
+    border-right: transparent;
+  }
+  .header-line::after {
+    content: '';
+    height: 10px; /* La taille du point */
+    width: 10px; /* La taille du point */
+    border-radius: 50%;
+    background-color: grey; /* La couleur du point doit être la même que celle de la ligne */
+    position: absolute;
+    right: -5px; /* Ajustez cette valeur pour que le point touche la fin de la ligne */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .calendrier-note {
+    color: grey; /* Définir la couleur du texte en gris */
+    font-style: italic; /* Optionnel : pour mettre le texte en italique */
+    text-align: center; /* Centrer le texte */
+    margin-top: 20px; /* Ajouter de l'espace au-dessus de la note */
+    font-size: 0.9em; /* Ajuster la taille de la police si nécessaire */
+  }
+  
+  /* Ajoutez des styles supplémentaires au besoin */
+  

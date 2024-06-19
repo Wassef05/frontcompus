@@ -1,0 +1,568 @@
+:root {
+  --PrimaryColor:hsl(199,100%,33%);
+  --SecondaryColor:hsl(187,85%,43%);
+  --gardientColor: linear-gardient(to right, #8BF0FD,#0073A8);
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor:hsl(201,33%,16%);
+  --textColor:hsl(240,4%,36%);
+  --whiteColorDeam:hsl(0,0%,93%);
+  --greyText: rgb(190,190,190);
+  --inputColor:rgb(239,239,239);
+  --bodyColor:rgb(240,240,246);
+  --cardBG: rgb(225,225,235);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.logingr {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  padding-top: 13vh;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 7px 50px rgb(214, 223, 213);
+}
+.logingr .container {
+  height: 75vh;
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+  border-radius: 40px;
+  background: hsl(0, 0%, 91%);
+}
+.logingr .container .videoDiv {
+  position: relative;
+  display: flex;
+  flex-basis: 50%;
+  width: 70%;
+  height: 100%;
+  padding: 0 1.5rem;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.logingr .container .videoDiv video, .logingr .container .videoDiv .footerDiv {
+  position: absolute;
+}
+.logingr .container .videoDiv .img {
+
+ 
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 200vh;
+}
+.logingr .container .videoDiv .textDiv {
+  padding-top: 40vh;
+  position: relative;
+}
+.logingr .container .videoDiv .textDiv .title {
+  color: hsla(187, 85%, 43%, 0.56);
+  font-size: 35px;
+  font-weight: 800;
+}
+.logingr .container .videoDiv .textDiv p {
+  color: var(--textColor);
+  padding: 1rem;
+  font-weight: 400;
+}
+.logingr .container .videoDiv .footerDiv {
+  bottom: 10px;
+  padding: 0 1rem;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.248);
+  left: 10px;
+  right: 10px;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  border-radius: 10px;
+}
+.logingr .container .videoDiv .footerDiv .text {
+  color:grey;
+}
+.logingr .container .videoDiv .footerDiv .btn {
+  background: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+  color: aquamarine;
+  margin-top: 2rem;
+  border-radius: 20px;
+  font-weight: 200;
+  width:20%;
+  transition: 0.3s ease;
+}
+.logingr .container .videoDiv .footerDiv .btn:hover {
+  background: var(--hoverColor);
+  color: var(--blackColor);
+}
+.logingr .container .formDiv {
+  flex-basis: 50%;
+  margin: auto;
+  flex-direction: column;
+  gap: 1.5rem;
+  transform: translateY(-1rem);
+}
+.logingr .container .formDiv .headerDiv {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.logingr .container .formDiv .headerDiv img {
+  width: 200px;
+}
+.logingr .container .formDiv .headerDiv h3 {
+  font-size: 25px;
+  color: var(--blackColor);
+  font-weight: 600;
+}
+.logingr .container .formDiv .formlogin {
+  gap: 1rem;
+  padding-left: 4rem;
+}
+.logingr .container .formDiv .formlogin .showMessage {
+  display: block;
+  color: var(--whiteColor);
+  padding: 10px;
+  background: rgb(255, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+}
+.logingr .container .formDiv .formlogin .inputDiv .iconn {
+  
+    width: 35px;
+    height: 35px;
+    border-radius: 10%;
+    text-align: center;
+    color: #90949a;
+    transition: 0.5s;
+    display: grid !important;
+    align-items: center !important;
+    justify-content: center !important;
+  
+}
+.logingr .container .formDiv .formlogin .inputDiv input {
+  background-color: var(--inputColor);
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 50px;
+}
+.logingr .container .formDiv .formlogin .inputDiv label {
+  color: var(--blackColor);
+  background: none;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0.5rem 0;
+  display: block;
+}
+.logingr .container .formDiv .formlogin .inputDiv .input {
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: var(--inputColor);
+  border-radius: 20px;
+  width:80%;
+}
+.logingr .container .formDiv .formlogin .btn {
+  padding: 0.2rem;
+  background-color:#152137;
+  border-radius: 10px;
+  color: darkgoldenrod;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 4.5rem;
+  justify-content: center;
+  font-size: 14px;
+  width: 50%;
+  gap: 0.5rem;
+  transition: 0.3s ease;
+}
+.logingr .container .formDiv .formlogin .btn .iconn {
+  width: 35px;
+  height: 35px;
+  border-radius: 10%;
+  text-align: center;
+  color: #90949a;
+  transition: 0.5s;
+  display: grid !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.logingr .container .formDiv .formlogin .btn:hover {
+  background: darkgoldenrod;
+  color:#152137;
+}
+.logingr .container .formDiv .formlogin .btn:hover .iconn {
+  transform: translateX(9px);
+  color:#152137;
+}
+.logingr .container .formDiv .formlogin .forgotPassword {
+  font-size: 13px;
+  color: var(--blackColor);
+  opacity: 0.7;
+  text-align: center;
+}
+.logingr .container .formDiv .formlogin .forgotPassword a {
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media screen and (max-width: 602px) {
+  .logingr .container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .logingr .container .videoDiv {
+    width: 100%;
+  }
+  .logingr .container .videoDiv .textDiv .title {
+    font-size: 20px;
+  }
+  .logingr .container .videoDiv .textDiv p {
+    padding: 1rem;
+  }
+  .logingr .container .videoDiv .footerDiv .text {
+    font-size: 12px;
+  }
+  .logingr .container .videoDiv .footerDiv .btn {
+    padding: 0.4rem 1.5rem;
+  }
+  .logingr .container .formDiv {
+    gap: 1rem;
+    transform: translateY(-0.5rem);
+  }
+  .logingr .container .formDiv .headerDiv {
+    padding: 1rem 0;
+  }
+  .logingr .container .formDiv .headerDiv img {
+    width: 40px;
+  }
+  .logingr .container .formDiv .headerDiv h3 {
+    font-size: 20px;
+  }
+  .logingr .container .formDiv .form {
+    gap: 0.5rem;
+  }
+  .logingr .container .formDiv .form .inputDiv input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 678px) {
+  .logingr .container .videoDiv {
+    width: 100%;
+  }
+  .logingr .container .videoDiv .textDiv .title {
+    font-size: 25px;
+  }
+  .logingr .container .videoDiv .textDiv p {
+    padding: 1rem;
+  }
+  .logingr .container .videoDiv .footerDiv .text {
+    font-size: 12px;
+  }
+  .logingr .container .videoDiv .footerDiv .btn {
+    padding: 0.8rem 1.5rem;
+  }
+  .logingr .container .formDiv .headerDiv {
+    padding: 1.5rem 0;
+  }
+  .logingr .container .formDiv .headerDiv h3 {
+    font-size: 20px;
+  }
+  .logingr .container .formDiv .form .inputDiv input {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 927px) {
+  .logingr .container {
+    width: 85%;
+  }
+}
+
+
+
+
+
+
+
+
+/* 
+:root {
+  --PrimaryColor:hsl(199,100%,33%);
+  --SecondaryColor:hsl(187,85%,43%);
+  --gardientColor: linear-gardient(to right, #8BF0FD,#0073A8);
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor:hsl(201,33%,16%);
+  --textColor:hsl(240,4%,36%);
+  --whiteColorDeam:hsl(0,0%,93%);
+  --greyText: rgb(190,190,190);
+  --inputColor:rgb(239,239,239);
+  --bodyColor:rgb(240,240,246);
+  --cardBG: rgb(225,225,235);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.logingr {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  padding-top: 13vh;
+  border-radius: 2opx;
+  overflow: hidden;
+  box-shadow: 0 7px 50px rgb(214, 223, 213);
+}
+.logingr .container {
+  height: 75vh;
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: hsl(0, 0%, 91%);
+}
+.logingr .container .videoDiv {
+  position: relative;
+  display: flex;
+  flex-basis: 50%;
+  width: 70%;
+  height: 100%;
+  padding: 0 1.5rem;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.logingr .container .videoDiv video, .logingr .container .videoDiv .footerDiv {
+  position: absolute;
+}
+.logingr .container .videoDiv video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.logingr .container .videoDiv .textDiv {
+  padding-top: 40vh;
+  position: relative;
+}
+.logingr .container .videoDiv .textDiv .title {
+  color: hsla(187, 85%, 43%, 0.56);
+  font-size: 35px;
+  font-weight: 800;
+}
+.logingr .container .videoDiv .textDiv p {
+  color: var(--textColor);
+  padding: 1rem;
+  font-weight: 400;
+}
+.logingr .container .videoDiv .footerDiv {
+  bottom: 10px;
+  padding: 0 1rem;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.248);
+  left: 10px;
+  right: 10px;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  border-radius: 10px;
+}
+.logingr .container .videoDiv .footerDiv .text {
+  color:grey;
+}
+.logingr .container .videoDiv .footerDiv .btn {
+  background: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+  color: aquamarine;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+.logingr .container .videoDiv .footerDiv .btn:hover {
+  background: var(--hoverColor);
+  color: var(--blackColor);
+}
+.logingr .container .formDiv {
+  flex-basis: 50%;
+  margin: auto;
+  flex-direction: column;
+  gap: 1.5rem;
+  transform: translateY(-1rem);
+}
+.logingr .container .formDiv .headerDiv {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.logingr .container .formDiv .headerDiv img {
+  width: 60px;
+  padding-bottom: 0.5rem;
+}
+.logingr .container .formDiv .headerDiv h3 {
+  font-size: 25px;
+  color: var(--blackColor);
+  font-weight: 600;
+}
+.logingr .container .formDiv .formlogin {
+  gap: 1rem;
+}
+.logingr .container .formDiv .formlogin .showMessage {
+  display: block;
+  color: var(--whiteColor);
+  padding: 10px;
+  background: rgb(255, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+}
+.logingr .container .formDiv .formlogin .inputDiv .icon {
+  color: var(--greyText);
+}
+.logingr .container .formDiv .formlogin .inputDiv input {
+  background: none;
+  outline: none;
+  border: none;
+  width: 200px;
+}
+.logingr .container .formDiv .formlogin .inputDiv label {
+  color: var(--blackColor);
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0.5rem 0;
+  display: block;
+}
+.logingr .container .formDiv .formlogin .inputDiv .input {
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--inputColor);
+  border-radius: 10px;
+}
+.logingr .container .formDiv .formlogin .btn {
+  padding: 0.8rem;
+  background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+  border-radius: 10px;
+  color: var(--whiteColor);
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  font-size: 16px;
+  width: 100%;
+  gap: 0.5rem;
+  transition: 0.3s ease;
+}
+.logingr .container .formDiv .formlogin .btn:hover {
+  background: var(--hoverColor);
+  color: var(--blackColor);
+}
+.logingr .container .formDiv .formlogin .btn:hover .icon {
+  color: var(--blackColor);
+  transform: translateX(5px);
+}
+.logingr .container .formDiv .formlogin .forgotPassword {
+  font-size: 13px;
+  color: var(--blackColor);
+  opacity: 0.7;
+  text-align: center;
+}
+.logingr .container .formDiv .formlogin .forgotPassword a {
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media screen and (max-width: 602px) {
+  .logingr .container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .logingr .container .videoDiv {
+    width: 100%;
+  }
+  .logingr .container .videoDiv .textDiv .title {
+    font-size: 20px;
+  }
+  .logingr .container .videoDiv .textDiv p {
+    padding: 1rem;
+  }
+  .logingr .container .videoDiv .footerDiv .text {
+    font-size: 12px;
+  }
+  .logingr .container .videoDiv .footerDiv .btn {
+    padding: 0.4rem 1.5rem;
+  }
+  .logingr .container .formDiv {
+    gap: 1rem;
+    transform: translateY(-0.5rem);
+  }
+  .logingr .container .formDiv .headerDiv {
+    padding: 1rem 0;
+  }
+  .logingr .container .formDiv .headerDiv img {
+    width: 40px;
+  }
+  .logingr .container .formDiv .headerDiv h3 {
+    font-size: 20px;
+  }
+  .logingr .container .formDiv .form {
+    gap: 0.5rem;
+  }
+  .logingr .container .formDiv .form .inputDiv input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 678px) {
+  .logingr .container .videoDiv {
+    width: 100%;
+  }
+  .logingr .container .videoDiv .textDiv .title {
+    font-size: 25px;
+  }
+  .logingr .container .videoDiv .textDiv p {
+    padding: 1rem;
+  }
+  .logingr .container .videoDiv .footerDiv .text {
+    font-size: 12px;
+  }
+  .logingr .container .videoDiv .footerDiv .btn {
+    padding: 0.8rem 1.5rem;
+  }
+  .logingr .container .formDiv .headerDiv {
+    padding: 1.5rem 0;
+  }
+  .logingr .container .formDiv .headerDiv h3 {
+    font-size: 20px;
+  }
+  .logingr .container .formDiv .form .inputDiv input {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 927px) {
+  .logingr .container {
+    width: 85%;
+  }
+} */

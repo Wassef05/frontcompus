@@ -1,0 +1,13 @@
+.faq-link {
+  color: #978f8f;
+  text-decoration: none; 
+}
+
+.faq-link:visited {
+  color: #978f8f;
+}
+
+.faq-link-active {
+  color:#152137; 
+  text-decoration: underline; 
+}

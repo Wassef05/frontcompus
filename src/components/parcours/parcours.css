@@ -1,0 +1,149 @@
+.parcours-univ-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 6rem;
+  }
+  
+  .main-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 4rem;
+  }
+  .specialities-list {
+    list-style: none;
+    padding-left: 20px; 
+    margin: 20px 0; 
+  }
+  
+  .specialities-list li::before {
+    content: '•';
+    color: #1eb2a6; 
+    font-size: 1.5em; 
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  .specialities-list li {
+    font-weight: bold; /* Met le texte en gras */
+    padding: 4px 0; /* Ajoute un padding vertical pour chaque élément, ajustez selon vos besoins */
+  }
+  .content-list li::before {
+    content: '•';
+    color: #1eb2a6; /* Couleur verte pour la puce */
+    font-size: 1.5em; /* Ajustez la taille selon vos besoins */
+    margin-right: 5px;
+    vertical-align: middle; /* Ajuste l'alignement vertical de la puce par rapport au texte */
+  }
+  .text-content {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .content-image {
+    flex: 1;
+    max-width: 47%;
+    margin-left: 20px;
+   
+
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    
+  }
+  .additional-info {
+    color: #1eb2a6; /* Une nuance de vert, ajustez en fonction de votre charte graphique */
+    font-weight: bold;
+    padding-top: 1.5rem; /* Met le texte en gras */
+  }
+  
+  .contact-name {
+    text-decoration: underline; /* Souligne le texte */
+  }
+  .plan-etudes {
+    display: flex; /* Utilisez flexbox pour aligner les éléments côte à côte */
+    align-items: flex-start; /* Alignez les éléments en haut */
+    justify-content: flex-start; /* Commencez les éléments du début du conteneur */
+    gap: 20px; /* Ajoutez un espace entre les éléments de flexbox */
+    margin-bottom: 2rem;
+  }
+  
+  .tab-titles {
+    display: flex;
+    flex-direction: column; /* Empile les boutons verticalement */
+    align-items: flex-start; /* Alignez les boutons au début */
+    margin-right: 20px; /* Ajoutez de l'espace à droite des boutons, si nécessaire */
+  }
+  
+  /* .tab-titles button {
+    padding: 10px;
+    margin-bottom: 10px; 
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+  } */
+  .tab-titles button {
+    padding: 10px 160px; /* Augmente le padding horizontal pour élargir les boutons */
+    margin-bottom: 0.5px; /* Diminue l'espacement entre les boutons */
+   
+    background-color: #dfdcdc; /* Couleur de fond initiale */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transition douce pour le survol */
+    /* Le reste des propriétés reste inchangé */
+  }
+  
+  .tab-titles button:hover {
+    background-color: #1eb2a6; /* Vert pour le survol */
+    color: #fff; /* Texte blanc pour le survol */
+    border-color: #1eb2a6; /* Bordure verte pour le survol */
+  }
+  
+  .tab-titles button:focus {
+    outline: none;
+    background-color: #1eb2a6; /* Vert pour le focus */
+    color: #fff; 
+    
+  }
+  
+  
+  .tab-content {
+    padding-top: 3rem;
+    margin-top: 10px;
+  }
+  
+
+
+  .header-dot {
+    height: 10px; 
+    width: 10px; 
+    border-radius: 50%;
+    background-color: black; 
+    margin-left: 15px;
+  }
+
+  .header-content {
+    display: flex; 
+    align-items: center; 
+    font-size: 24px; 
+  }
+  
+  .header-line {
+    background-color: grey;
+    height: 4px;
+    width: 200px; 
+    margin-right: 15px;
+    position: relative;
+  }
+  .header-title {
+    font-weight: bold; 
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+
+   
+  }

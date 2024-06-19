@@ -1,0 +1,189 @@
+.heroprof {
+    background-image: url("../../../../src/assets/dashprof.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 200vh;
+  }
+
+  /* .prof-dashboard {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  } */
+  .dashboard-title {
+    color: white;
+    margin-bottom: 2rem;
+    display: flex;
+    font-size: 2rem;
+    
+      text-shadow: 3px 2px #959689;
+  
+  }
+  .buttons-group {
+    display: flex;
+    margin-bottom: -5rem;
+  }
+
+  .btn1 {
+    padding: 0.5rem 1.5rem;
+    font-size: 2rem;
+    border: darkgoldenrod solid;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+
+  
+ 
+
+
+  .coursesCard {
+      padding: 50px 0;
+      border-radius: 50%;
+    }
+    .coursesCard .items {
+      background-color: #fff;
+      padding: 30px;
+      text-align: center;
+     
+    }
+    .coursesCard .img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #152137;
+      padding: 15px;
+    }
+    .coursesCard img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .coursesCard .text {
+      margin-left: 15px;
+      text-align: left;
+    }
+    .coursesCard .text h1 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 45px;
+    }
+    .coursesCard .rate {
+      margin: 20px 0;
+      color: darkgoldenrod;
+    }
+    .coursesCard .rate i {
+      font-size: 13px;
+      margin-right: 5px;
+    }
+    .coursesCard .details .dimg img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    .coursesCard .details .box {
+      display: flex;
+      align-items: center;
+      color: grey;
+    }
+    .coursesCard .details span {
+      color:  #D7A20B;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .coursesCard .price {
+      margin: 30px 0;
+      background-color: #f8f8f8;
+      padding: 10px;
+    }
+    .coursesCard h3 {
+      font-weight: 500;
+      color: #D7A20B;
+    }
+    /*-------------online---------*/
+    .online {
+      text-align: center;
+    }
+    .online .box {
+      box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+      background-color: #fff;
+      padding: 30px 20px;
+      transition: 0.5s;
+    }
+    .online .img {
+      width: 80px;
+      height: 80px;
+      margin: auto;
+      position: relative;
+    }
+    .online img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .online h1 {
+      font-weight: 500;
+      font-size: 20px;
+      margin: 20px 0;
+      line-height: 30px;
+    }
+    .online span {
+      background-color: #152137;
+      padding: 5px 20px;
+      font-weight: 500;
+      font-size: 15px;
+      color: #D7A20B;
+      border-radius: 5px;
+    }
+    .online .box .show {
+      opacity: 0;
+    }
+    .online .box:hover {
+      background-color: #14223a;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .online span:hover {
+        background-color:darkgoldenrod;
+        padding: 5px 20px;
+        font-weight: 500;
+        font-size: 15px;
+        color: #152137;
+        border-radius: 5px;
+      }
+    
+    .online .box:hover .show {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .online .box:hover h1 {
+      color: #fff;
+    }
+    /*-------------online---------*/
+    @media screen and (max-width: 768px) {
+    }
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+    }
+    
+    /*-------------online---------*/
+    @media screen and (max-width: 768px) {
+    }

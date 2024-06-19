@@ -1,0 +1,55 @@
+.mainContent22 {
+  width: 82%;
+  height: 100%;
+  padding: 2rem;
+  overflow: auto;
+}
+.mainContent22 .bottom {
+  margin-top: 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.customVideo {
+  width: 70%; /* Diminuer la taille */
+  border-radius: 20px; /* Ajouter un border-radius */
+  max-height: 300px; /* Limiter la hauteur maximale */
+}
+.rightCard {
+  position: relative;
+}
+
+.videoDiv {
+  position: relative;
+}
+
+.customVideo {
+  width: 100%; /* Assurez-vous que la vidéo remplit le conteneur */
+  border-radius: 20px;
+}
+
+.videoContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* ou toute autre couleur appropriée */
+}
+
+.buttons {
+  margin-top: 20px; /* Espacement au-dessus du bouton */
+}
+.topSection {
+  margin-left: 40px; /* Ajustez cette valeur selon vos besoins */
+}
+
+
+@media screen and (max-width: 918px) {
+  .bottom {
+    flex-direction: column;
+  }
+}
+.charts-card {
+  border-radius: 10px;
+  background-color: #f0f8ff;
+}/*# sourceMappingURL=body.css.map */

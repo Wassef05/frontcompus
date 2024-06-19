@@ -1,0 +1,300 @@
+.parcours-univ-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 6rem;
+  }
+  
+  .main-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 4rem;
+  }
+  .specialities-list {
+    list-style: none;
+    padding-left: 20px; 
+    margin: 20px 0; 
+  }
+  
+  .specialities-list li::before {
+    content: '•';
+    color: #1eb2a6; 
+    font-size: 1.5em; 
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  .specialities-list li {
+    font-weight: bold; /* Met le texte en gras */
+    padding: 4px 0; /* Ajoute un padding vertical pour chaque élément, ajustez selon vos besoins */
+  }
+  .content-list li::before {
+    content: '•';
+    color: #1eb2a6; /* Couleur verte pour la puce */
+    font-size: 1.5em; /* Ajustez la taille selon vos besoins */
+    margin-right: 5px;
+    vertical-align: middle; /* Ajuste l'alignement vertical de la puce par rapport au texte */
+  }
+  .text-content {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .content-image {
+    flex: 1;
+    max-width: 47%;
+    margin-left: 20px;
+   
+
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    
+  }
+  .additional-info {
+    color: #1eb2a6; /* Une nuance de vert, ajustez en fonction de votre charte graphique */
+    font-weight: bold;
+    padding-top: 1.5rem; /* Met le texte en gras */
+  }
+  
+  .contact-name {
+    text-decoration: underline; /* Souligne le texte */
+  }
+  .plan-etudes {
+    display: flex; /* Utilisez flexbox pour aligner les éléments côte à côte */
+    align-items: flex-start; /* Alignez les éléments en haut */
+    justify-content: flex-start; /* Commencez les éléments du début du conteneur */
+    gap: 20px; /* Ajoutez un espace entre les éléments de flexbox */
+    margin-bottom: 2rem;
+  }
+  
+  .tab-titles {
+    display: flex;
+    flex-direction: column; /* Empile les boutons verticalement */
+    align-items: flex-start; /* Alignez les boutons au début */
+    margin-right: 20px; /* Ajoutez de l'espace à droite des boutons, si nécessaire */
+  }
+  
+  /* .tab-titles button {
+    padding: 10px;
+    margin-bottom: 10px; 
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+  } */
+  .tab-titles button {
+    padding: 10px 160px; /* Augmente le padding horizontal pour élargir les boutons */
+    margin-bottom: 0.5px; /* Diminue l'espacement entre les boutons */
+   
+    background-color: #dfdcdc; /* Couleur de fond initiale */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transition douce pour le survol */
+    /* Le reste des propriétés reste inchangé */
+  }
+  
+  .tab-titles button:hover {
+    background-color: #1eb2a6; /* Vert pour le survol */
+    color: #fff; /* Texte blanc pour le survol */
+    border-color: #1eb2a6; /* Bordure verte pour le survol */
+  }
+  
+  .tab-titles button:focus {
+    outline: none;
+    background-color: #1eb2a6; /* Vert pour le focus */
+    color: #fff; 
+    
+  }
+  
+  
+  .tab-content {
+    padding-top: 3rem;
+    margin-top: 10px;
+  }
+  
+
+
+  .header-dot {
+    height: 10px; 
+    width: 10px; 
+    border-radius: 50%;
+    background-color: black; 
+    margin-left: 15px;
+  }
+
+  .header-content {
+    display: flex; 
+    align-items: center; 
+    font-size: 24px; 
+  }
+  
+  .header-line {
+    background-color: grey;
+    height: 4px;
+    width: 200px; 
+    margin-right: 15px;
+    position: relative;
+  }
+  .header-title {
+    font-weight: bold; 
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+
+   
+  }
+
+  .carr {
+    max-width: 600px; /* ou toute autre largeur souhaitée */
+    height: auto; /* pour maintenir le ratio d'aspect */
+
+
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center; /* Centre les images horizontalement */
+    align-items: center; /* Alignement vertical au cas où les images ont des hauteurs différentes */
+    gap: 20px; /* Espace entre les images */
+ /* pour un espacement entre les images */
+  }
+
+  .carousel-wrapper {
+    margin-top: 5rem;
+    padding: 0 !important;
+  }
+
+  .carr2{
+    max-width: 600px; /* ou toute autre largeur souhaitée */
+    height: 507px; /* pour maintenir le ratio d'aspect */
+
+
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center; /* Centre les images horizontalement */
+    align-items: center; /* Alignement vertical au cas où les images ont des hauteurs différentes */
+    gap: 20px; /* Espace entre les images */
+ /* pour un espacement entre les images */
+  }
+
+  section#subscribe {
+    position: relative;
+    background: url(../../assets/parcfiltre.png);
+    text-align: center;
+    color: #090909;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    width: 100%;
+    padding: 3rem 0; 
+    margin: auto;
+    border-radius: 20px;
+    background-attachment: fixed;
+    margin-bottom: 5rem;
+  
+    /* Ajouter un pseudo-élément pour la superposition */
+    /* ::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background:  #1eb2a609;
+      border-radius: 20px; 
+    } */
+  }
+  
+  /* Assurez-vous que le contenu de la section est au-dessus de la superposition */
+  section#subscribe > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  .subscribe h2 {
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    padding-bottom: 1rem;
+  }
+  
+  form > * {
+    width: 100%;
+    max-width: 50rem;
+    /* margin: 3rem auto; */
+  }
+  
+  .inputabout {
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid #777;
+    border-radius: 30px 0 0 30px;
+    color: #fff;
+    outline: none;
+    width: 60%;
+    font-size: 1.6rem;
+     
+  }
+  ::placeholder { 
+    color:gray !important;
+    font-size: 16px;
+  }
+  .btnabout {
+    padding: 1rem !important;
+  
+    background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0378af);
+    border: 1px solid var(--form-button) !important;
+    border-radius:5px 30px 30px 5px  !important;
+    margin-left: 1rem;
+    color: #fff !important;
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .stats-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permet aux compteurs de passer à la ligne suivante si nécessaire */
+    margin-bottom: 2rem; /* Ajustez l'espacement entre les lignes */
+  }
+  
+  .stat {
+    text-align: center;
+    font-weight: bold; /* Mettre le texte en gras */
+    flex-basis: 22%; /* Ajustez la largeur de chaque compteur */
+    margin: 0.5rem; /* Ajustez l'espacement autour de chaque compteur */
+  }
+  
+  .stat p {
+    font-size: 1.2rem; /* Agrandir la taille de police du texte */
+    margin-top: 0.5rem; 
+    color: #fff;/* Ajustez l'espacement entre le nombre et le texte */
+  }
+  
+  /* Styles pour les nombres du compteur */
+  .stat span {
+    font-size: 2.5rem; /* Agrandir la taille de police des nombres */
+    color: #ffffff; /* Ajustez la couleur si nécessaire */
+  }
+  .social-icon:hover {
+    background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0378af);
+  }
+  
+  @media screen and (max-width: 600px) {
+    form input {
+      width: 60%;
+    }
+  }
+  
+  

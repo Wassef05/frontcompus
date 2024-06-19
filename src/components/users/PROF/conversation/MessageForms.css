@@ -1,0 +1,22 @@
+.send-message-form {
+  display: flex;
+  height: 100%;
+}
+
+.recipient-list {
+  width: 30%;
+  border-right: 1px solid #ccc;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.message-area {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.message-form {
+  margin-top: auto;
+}

@@ -1,0 +1,24 @@
+.mainContent22{
+    width: 82%;
+    height: 100%;
+    padding: 2rem;
+    overflow: auto;
+
+    .bottom{
+        margin-top: 2rem;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+}
+
+// MEDIA QUERIES ===================>
+@media screen and (max-width: 918px) {
+    .bottom{
+        flex-direction: column;
+    }
+}
+
+.charts-card{
+    border-radius: 10px;
+    background-color: #f0f8ff;
+}

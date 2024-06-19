@@ -1,0 +1,110 @@
+.coursesCard {
+  padding: 50px 0;
+}
+.coursesCard .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.filter-btn {
+  background-color: #f0f2f5;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.filter-btn.active, .filter-btn:hover {
+  background-color: #152137;
+  color: white;
+}
+.coursesCard .grid2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.coursesCard .items {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.coursesCard .img {
+  width: 170px;
+  height: 129px;
+  border-radius: 12%;
+  background-color: #152137;
+  padding: 9px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.coursesCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coursesCard .text {
+  margin-left: 15px;
+  text-align: left;
+}
+.coursesCard .text h1 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+}
+.coursesCard .text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.coursesCard .rate {
+  margin: 20px 0;
+  color: darkgoldenrod;
+}
+.coursesCard .rate i {
+  font-size: 13px;
+  margin-right: 5px;
+}
+.coursesCard .price {
+  margin: 30px 0;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+.coursesCard h3 {
+  font-weight: 500;
+  color: #D7A20B;
+}
+button {
+  display: block;
+  margin: 20px auto 0;
+}
+.show-more-btn {
+  margin: 0;
+  box-shadow: none;
+  border: 4px solid #D7A20B;
+  background-color: #152137;
+  color: #D7A20B;
+  width: 50%;
+  transition: 0.5s;
+}
+.show-more-btn:hover {
+  background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .coursesCard .items {
+    flex: 1 1 100%;
+  }
+}

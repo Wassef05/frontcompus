@@ -1,0 +1,89 @@
+/* General Styles */
+/* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  /* Container */
+  .containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  /* Card */
+  .card-containerr {
+    background-color: #e4dddd;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin: 35px;
+
+  }
+  
+  /* Profile Image */
+  .profile-img-cardd {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 50%;
+  }
+  
+  /* Form Group */
+  .form-groups {
+    margin-bottom: 20px;
+  }
+  
+  .form-groups label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-groups .form-controls {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Button */
+  .btnn {
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to right, #d7a20b78, #d7a20ba6, #d7a20bde, #D7A20B, #D7A20B);
+    border-radius: 10px;
+        border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btnn:hover {
+    background-color: #0056b3;
+  }
+  
+  .spinner-borders {
+    margin-right: 10px;
+  }
+  
+  .alerts {
+    padding: 10px;
+    margin-top: 20px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    border-radius: 4px;
+  }
+  
+  
+  
